@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tegra - Exercícios</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+        body {
+            background-color: rgba(66, 102, 170, 0.404);
+            padding: 5px;
+            border-radius: 15px;
+            text-align: center;
+            font-family: 'Shippori Antique B1', sans-serif;
+        }
+
+        .code {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            background-color: rgba(92, 96, 100, 0.39);
+            padding: 4px 6px;
+            border-left: 5px solid #0060f0;
+            border-radius: 25px;
+        }
+
+        .code2 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            padding: 1px 0px;
+        }
+
+        .container1 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            background: #fff;
+            padding: 20px 6px;
+            border-radius: 25px;
+            border-left: 5px solid #0060f0;
+        }
+
+        input {
+            font-size: 17px;
+        }
+
+        button {
+            height: 30px;
+            width: 20%;
+            outline: none;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+
+            border-radius: 5px;
+            letter-spacing: 1px;
+            background: #0060f0;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        label {
+            font-size: 20px;
+        }
+    </style>
+
+    <script>
+        function mediaIdadeFuncionarios() {
+
+            var nomeFuncionario1 = document.getElementById("nomeFuncionario1").value;
+            var nomeFuncionario2 = document.getElementById("nomeFuncionario2").value;
+
+            var idadeFuncionario1 = document.getElementById("idadeFuncionario1").value;
+            var idadeFuncionario2 = document.getElementById("idadeFuncionario2").value;
+
+            var media = Math.sqrt(idadeFuncionario1 + idadeFuncionario2) / 2;
+
+            var mediaFormatada = media.toFixed(2);
+
+            document.getElementById("resultado").innerHTML = "A idade média de <strong>" + nomeFuncionario1 + "</strong> e <strong>" + nomeFuncionario2 + "</strong> é de " + mediaFormatada;
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Exercício 03</h1>
+
+    <div class="code ">
+
+        <p><b>Fazer um programa para ler o nome e idade de duas pessoas. Ao final
+                mostrar uma mensagem com os nomes e a idade média entre essas
+                pessoas, com uma casa decimal, conforme o exemplo.</b></p>
+
+        <div class="code2">
+
+            <p>
+                <b>Nome1: Maria Silva<br>
+                    Idade1: 19<br>
+                    Nome2: Joao Melo<br>
+                    Idade2: 20<br>
+                    A idade média de Maria Silva e Joao Melo é de 19.5 anos
+            </p></b>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="container1">
+        <div class="user-details">
+
+            <label for="nomeFuncionario1"> Nome do Funcionario 1: </label>
+            <input id="nomeFuncionario1" type="string"><br>
+
+            <br>
+
+            <label for="idadeFuncionario1">Idade do funcionario 1: </label>
+            <input id="idadeFuncionario1" type="number"><br>
+
+            <br>
+
+            <label for="nomeFuncionario2">Nome do Funcionario 2: </label>
+            <input id="nomeFuncionario2" type="string"><br>
+
+            <br>
+
+            <label for="idadeFuncionario2">Idade do funcionario 2: </label>
+            <input id="idadeFuncionario2" type="number"><br>
+
+            <br>
+
+            <button onclick="mediaIdadeFuncionarios()">Calcular Média</button>
+
+        </div>
+
+        <br>
+
+        <div id="resultado" style="font-size: 40px;"></div>
+
+    </div>
+
+</body>
+
+</html>
