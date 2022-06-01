@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tegra - Exercícios</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+        body {
+            background-color: rgba(66, 102, 170, 0.404);
+            padding: 5px;
+            border-radius: 15px;
+            text-align: center;
+            font-family: 'Shippori Antique B1', sans-serif;
+        }
+
+        .code {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            background-color: rgba(92, 96, 100, 0.39);
+            padding: 4px 6px;
+            border-left: 5px solid #0060f0;
+            border-radius: 25px;
+        }
+
+        .code2 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            padding: 1px 0px;
+        }
+
+        .container1 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            background: #fff;
+            padding: 20px 6px;
+            border-radius: 25px;
+            border-left: 5px solid #0060f0;
+        }
+
+        input {
+            font-size: 17px;
+        }
+
+        button {
+            height: 30px;
+            width: 20%;
+            outline: none;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+
+            border-radius: 5px;
+            letter-spacing: 1px;
+            background: #0060f0;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        label {
+            font-size: 20px;
+        }
+    </style>
+
+    <script>
+        function calcularRaio() {
+
+            var valorRaioCirculo = document.getElementById("valorRaioCirculo").value;
+            var pi = 3.14159;
+            var area = pi * (Number(valorRaioCirculo) * Number(valorRaioCirculo));
+
+            var areaFormatada = area.toFixed(3);
+
+            document.getElementById("resultado").innerHTML = "Área = <strong>" + areaFormatada + "</strong>";
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Exercício 05</h1>
+
+    <div class="code ">
+
+        <p><b>Fazer um programa para ler o valor "r" do raio de um círculo, e depois
+                mostrar o valor da área do círculo com três casas decimais. A fórmula da
+                área do círculo é a seguinte: área = π. r². O valor de π corresponde a 3.14159.</b></p>
+
+        <div class="code2">
+
+            <p>
+                <b>Digite o valor do raio do círculo: 2.0<br>
+                    ÁREA = 12.566
+            </p></b>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="container1">
+        <div class="user-details">
+
+            <div class="input-box">
+                <label for="valorRaioCirculo">Digite o valor do raio do círculo: </label>
+                <input id="valorRaioCirculo" type="number"><br>
+            </div>
+
+            <br>
+
+            <button onclick="calcularRaio()">Calcular</button>
+
+        </div>
+
+        <br>
+
+        <div id="resultado" style="font-size: 40px;"></div>
+
+    </div>
+
+</body>
+
+</html>
