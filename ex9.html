@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tegra - Exercícios</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+        body {
+            background-color: rgba(66, 102, 170, 0.404);
+            padding: 5px;
+            border-radius: 15px;
+            text-align: center;
+            font-family: 'Shippori Antique B1', sans-serif;
+        }
+
+        .question {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            background-color: rgba(92, 96, 100, 0.39);
+            padding: 4px 6px;
+            border-left: 5px solid #0060f0;
+            border-radius: 25px;
+        }
+
+        .exemplo {
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            padding: 1px 0px;
+        }
+
+        .container1 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            background: #fff;
+            padding: 20px 6px;
+            border-radius: 25px;
+            border-left: 5px solid #0060f0;
+        }
+
+        input {
+            font-size: 17px;
+        }
+
+        button {
+            height: 30px;
+            width: 20%;
+            outline: none;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+
+            border-radius: 5px;
+            letter-spacing: 1px;
+            background: #0060f0;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        label {
+            font-size: 20px;
+        }
+    </style>
+
+    <script>
+        function calcular() {
+
+            var segundos = document.getElementById("segundos").value;
+
+            var horas = segundos / 3600;
+            var minutos = segundos / 60;
+
+            segundos %= 3600;
+            segundos %= 60;
+
+           console.log("Tempo total:");
+            if (horas > 0)
+            console.log(" %d horas", horas);
+            if (minutos > 0)
+            console.log(" %d minutos", minutos);
+            if (segundos > 0)
+            console.log(" %d segundos", segundos);
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Exercício 10</h1>
+
+    <div class="question ">
+
+        <p><b>Fazer um programa para ler uma duração de tempo em segundos, daí
+            imprimir na tela esta duração no formato horas:minutos:segundos..</b></p>
+
+        <div class="exemplo">
+
+            <p>
+                <b> Digite a duração em segundos: 12506<br>
+                    3:28:26<br>
+                    Digite a duração em segundos: 300<br>
+                    0:5:0<br>
+                    Digite a duração em segundos: 140811<br>
+                    39:6:51<br><br>
+
+                    RESPOSTA NO CONSOLE (F12)
+            </p></b>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="container1">
+        <div class="user-details">
+
+            <div class="input-box">
+                <label for="segundos"> Digite a duração em segundos: </label>
+                <input id="segundos" type="number"><br>
+
+            </div>
+
+            <br>
+
+            <button onclick="calcular()">Calcular</button>
+
+        </div>
+    </div>
+
+    <br>
+
+</body>
+
+</html>

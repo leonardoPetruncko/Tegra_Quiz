@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tegra - Exercícios</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+        body {
+            background-color: rgba(66, 102, 170, 0.404);
+            padding: 5px;
+            border-radius: 15px;
+            text-align: center;
+            font-family: 'Shippori Antique B1', sans-serif;
+        }
+
+        .question {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            background-color: rgba(92, 96, 100, 0.39);
+            padding: 4px 6px;
+            border-left: 5px solid #0060f0;
+            border-radius: 25px;
+        }
+
+        .exemplo {
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            padding: 1px 0px;
+        }
+
+        .container1 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            background: #fff;
+            padding: 20px 6px;
+            border-radius: 25px;
+            border-left: 5px solid #0060f0;
+        }
+
+        input {
+            font-size: 17px;
+        }
+
+        button {
+            height: 30px;
+            width: 20%;
+            outline: none;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+
+            border-radius: 5px;
+            letter-spacing: 1px;
+            background: #0060f0;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        label {
+            font-size: 20px;
+        }
+    </style>
+
+    <script>
+        function calcular() {
+
+            var dia = document.getElementById("dia").value;
+            var mes = document.getElementById("mes").value;
+
+            var d = dia;
+            var m = mes;
+
+            if (dia >= 21 && mes == "março" || dia <= 20 && mes == "abril") {
+
+                alert("  Seu signo é Áries  ");
+
+                console.log("  Seu signo é Áries  ");
+
+            } else if (dia >= 21 && mes == "abril" || dia <= 20 && mes == "maio") {
+
+                alert("  Seu signo é Touro ");
+
+                console.log(" Seu signo é Touro ");
+
+            } else if (dia >= 21 && mes == "maio" || dia <= 20 && mes == "junho") {
+
+                alert("  Seu signo é Gêmeos ");
+
+                console.log(" Seu signo é Gêmeos ");
+
+            } else if (dia >= 21 && mes == "junho" || dia <= 22 && mes == "julho") {
+
+                alert("  Seu signo é Cancer ");
+
+                console.log(" Seu signo é Cancer ");
+
+            } else if (dia >= 23 && mes == "julho" || dia <= 22 && mes == "agosto") {
+
+                alert("  Seu signo é Leão ");
+
+                console.log(" Seu signo é Leão ");
+
+            } else if (dia >= 23 && mes == "agosto" || dia <= 22 && mes == "setembro") {
+
+                alert("  Seu signo é Virgem ");
+
+                console.log(" Seu signo é Virgem ");
+
+            } else if (dia >= 23 && mes == "setembro" || dia <= 22 && mes == "outubro") {
+
+                alert("  Seu signo é Libra ");
+
+                console.log(" Seu signo é Libra ");
+
+            } else if (dia > 23 && mes == "outubro" || dia <= 21 && mes == "novembro") {
+
+                alert("  Seu signo é Escorpião ");
+
+                console.log(" Seu signo é Escorpião ");
+
+            } else if (dia >= 22 && mes == "novembro" || dia <= 21 && mes == "dezembro") {
+
+                alert("  Seu signo é Sagitário ");
+
+                console.log(" Seu signo é Sagitário ");
+
+            } else if (dia >= 22 && mes == "dezembro" || dia <= 20 && mes == "janeiro") {
+
+                alert("  Seu signo é Capricórnio ");
+
+                console.log(" Seu signo é Capricórnio ");
+
+            } else if (dia >= 21 && mes == "janeiro" || dia <= 18 && mes == "fevereiro") {
+
+                alert("  Seu signo é Aquário ");
+
+                console.log(" Seu signo é Aquário ");
+
+            } else if (dia >= 19 && mes == "fevereiro" || dia <= 20 && mes == "março") {
+
+                alert("  Seu signo é Peixes ");
+
+                console.log(" Seu signo é Peixes ");
+
+            } else {
+                alert(" ERROR ")
+            }
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Exercício 25</h1>
+
+    <div class="question ">
+
+        <p><b>Receber valores numéricos para o dia e o mês de nascimento de uma
+                pessoa; Exibir o signo da pessoa de acordo com os seguintes critérios:</b></p>
+
+        <div class="exemplo">
+
+            <p><b>
+
+                    Áries: de 21 de março a 20 de abril</br>
+                    Touro: de 21 de abril a 20 de maio</br>
+                    Gêmeos: de 21 de maio a 20 de junho</br>
+                    Câncer: de 21 de junho a 22 de julho</br>
+                    Leão: de 23 de julho a 22 de agosto</br>
+                    Virgem: de 23 de agosto a 22 de setembro</br>
+                    Libra: de 23 de setembro a 22 de outubro</br>
+                    Escorpião: de 23 de outubro a 21 de novembro</br>
+                    Sagitário: de 22 de novembro a 21 de dezembro</br>
+                    Capricórnio: de 22 de dezembro a 20 de janeiro</br>
+                    Aquário: de 21 de janeiro a 18 de fevereiro</br>
+                    Peixes: de 19 de fevereiro a 20 de março
+
+            </p></b>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="container1">
+        <div class="user-details">
+
+            <div class="input-box">
+                <label for="dia"> Dia</label>
+                <input id="dia" type="number"><br>
+
+                <br>
+
+                <label for="mes"> Mês </label>
+                <input id="mes" type="String"><br>
+
+            </div>
+
+            <br>
+
+            <button onclick="calcular()">Calcular</button>
+
+        </div>
+    </div>
+
+    <br>
+
+</body>
+
+</html>

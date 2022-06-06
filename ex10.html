@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tegra - Exercícios</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+        body {
+            background-color: rgba(66, 102, 170, 0.404);
+            padding: 5px;
+            border-radius: 15px;
+            text-align: center;
+            font-family: 'Shippori Antique B1', sans-serif;
+        }
+
+        .question {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            background-color: rgba(92, 96, 100, 0.39);
+            padding: 4px 6px;
+            border-left: 5px solid #0060f0;
+            border-radius: 25px;
+        }
+
+        .exemplo {
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            padding: 1px 0px;
+        }
+
+        .container1 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            background: #fff;
+            padding: 20px 6px;
+            border-radius: 25px;
+            border-left: 5px solid #0060f0;
+        }
+
+        input {
+            font-size: 17px;
+        }
+
+        button {
+            height: 30px;
+            width: 20%;
+            outline: none;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+
+            border-radius: 5px;
+            letter-spacing: 1px;
+            background: #0060f0;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        label {
+            font-size: 20px;
+        }
+    </style>
+
+    <script>
+        function calcular() {
+
+            var primeiroValor = document.getElementById("primeiroValor").value;
+            var segundoValor = document.getElementById("segundoValor").value;
+            var terceiroValor = document.getElementById("terceiroValor").value;
+
+            if ( Number (primeiroValor) < Number (segundoValor)) {
+                if (Number (primeiroValor) <  Number (terceiroValor))
+                    alert('Menor Número é: ' + primeiroValor);
+                else
+                    alert('Menor Número é: ' + terceiroValor);
+            }
+            else {
+                if ( Number (segundoValor) < Number (terceiroValor))
+                    alert('Menor Número é: ' + segundoValor);
+                else
+                    alert('Menor Número é: ' + terceiroValor);
+            }
+
+
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Exercício 10</h1>
+
+    <div class="question ">
+
+        <p><b>Fazer um programa para ler três números inteiros. Em seguida, mostrar
+                qual o menor dentre os três números lidos. Em caso de empate, mostrar
+                apenas uma vez.</b></p>
+
+        <div class="exemplo">
+
+            <p>
+                <b> Primeiro valor: 7<br>
+                    Segundo valor: 3<br>
+                    Terceiro valor: 8<br>
+                    MENOR = 3
+            </p></b>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="container1">
+        <div class="user-details">
+
+            <div class="input-box">
+                <label for="primeiroValor"> Primeiro Valor </label>
+                <input id="primeiroValor" type="number"><br>
+
+                <br>
+
+                <label for="segundoValor"> Segundo Valor </label>
+                <input id="segundoValor" type="number"><br>
+
+                <br>
+
+                <label for="terceiroValor"> Terceiro Valor </label>
+                <input id="terceiroValor" type="number"><br>
+            </div>
+
+            <br>
+
+            <button onclick="calcular()">Calcular</button>
+
+        </div>
+    </div>
+
+    <br>
+
+</body>
+
+</html>

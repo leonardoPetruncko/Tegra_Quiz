@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tegra - Exercícios</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+        body {
+            background-color: rgba(66, 102, 170, 0.404);
+            padding: 5px;
+            border-radius: 15px;
+            text-align: center;
+            font-family: 'Shippori Antique B1', sans-serif;
+        }
+
+        .question {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            background-color: rgba(92, 96, 100, 0.39);
+            padding: 4px 6px;
+            border-left: 5px solid #0060f0;
+            border-radius: 25px;
+        }
+
+        .exemplo {
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+            padding: 1px 0px;
+        }
+
+        .container1 {
+            margin-left: auto;
+            margin-right: auto;
+            width: 70%;
+            background: #fff;
+            padding: 20px 6px;
+            border-radius: 25px;
+            border-left: 5px solid #0060f0;
+        }
+
+        input {
+            font-size: 17px;
+        }
+
+        button {
+            height: 30px;
+            width: 20%;
+            outline: none;
+            color: #fff;
+            border: none;
+            font-size: 18px;
+
+            border-radius: 5px;
+            letter-spacing: 1px;
+            background: #0060f0;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        label {
+            font-size: 20px;
+        }
+    </style>
+
+    <script>
+        function calcularTroco() {
+
+            var numeroUsuario = document.getElementById("numeroUsuario").value;
+
+            for (var i = 0; i <= 10; i++) {
+
+               console.log(numeroUsuario + " x " + i + " = " + (numeroUsuario * i));
+
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <h1>Exercício 22</h1>
+
+    <div class="question ">
+
+        <p><b>Ler um número inteiro N, daí mostrar na tela a tabuada de N para 1 a 10,
+                conforme exemplo.
+            </b></p>
+
+        <div class="exemplo">
+
+            <p>
+                <b>Deseja a tabuada para qual valor? 4 <br>
+                    4 x 1 = 4<br>
+                    4 x 2 = 8<br>
+                    4 x 3 = 12<br>
+                    4 x 4 = 16<br>
+                    4 x 5 = 20<br>
+                    4 x 6 = 24<br>
+                    4 x 7 = 28<br>
+                    4 x 8 = 32<br>
+                    4 x 9 = 36<br>
+                    4 x 10 = 40<br><br>
+
+                    Resposta no Console (F12)
+            </p></b>
+        </div>
+    </div>
+
+    <br><br>
+
+    <div class="container1">
+        <div class="user-details">
+
+            <div class="input-box">
+                <label for="numeroUsuario">Digite o número da tabuada desejada </label>
+                <input id="numeroUsuario" type="number"><br>
+
+            </div>
+
+            <br>
+
+            <button onclick="calcularTroco()">Calcular</button>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
