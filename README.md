@@ -1,0 +1,2 @@
+# Exercícios da Empresa Tegra.
+
